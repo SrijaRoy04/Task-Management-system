@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#5847d2","surface-bright":"#f8f9ff","text-primary":"#0F172A","on-surface-variant":"#474554","secondary-fixed-dim":"#adc6ff","primary":"#5341cd","priority-high-text":"#E11D48","tertiary":"#006645","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005236","surface":"#f8f9ff","on-background":"#0b1c30","text-secondary":"#475569","surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#002113","border-strong":"#CBD5E1","tertiary-container":"#008259","secondary":"#0058be","on-primary-container":"#faf6ff","on-error-container":"#93000a","inverse-surface":"#213145","secondary-container":"#2170e4","primary-fixed-dim":"#c6bfff","on-secondary-fixed":"#001a42","on-primary-fixed-variant":"#4029ba","on-surface":"#0b1c30","primary-fixed":"#e4dfff","surface-dim":"#cbdbf5","status-pending-bg":"#FEF3C7","inverse-primary":"#c6bfff","outline-variant":"#c8c4d7","on-secondary-fixed-variant":"#004395","on-primary":"#ffffff","priority-med-text":"#2563EB","on-primary-fixed":"#160066","priority-low-bg":"#DCFCE7","surface-container-high":"#dce9ff","surface-card":"#FFFFFF","on-tertiary":"#ffffff","on-secondary-container":"#fefcff","status-raised-bg":"#EFF6FF","status-raised-text":"#2563EB","background":"#f8f9ff","border-subtle":"#E2E8F0","status-closed-text":"#059669","status-closed-bg":"#ECFDF5","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","priority-low-text":"#16A34A","priority-high-bg":"#FFE4E6","surface-variant":"#d3e4fe","secondary-fixed":"#d8e2ff","priority-med-bg":"#EFF6FF","surface-container":"#e5eeff","outline":"#787586","canvas-bg":"#F8FAFC","surface-container-low":"#eff4ff","tertiary-fixed":"#6ffbbe","primary-container":"#6c5ce7","status-pending-text":"#D97706","on-tertiary-container":"#e1ffec","inverse-on-surface":"#eaf1ff","text-muted":"#94A3B8","error":"#ba1a1a","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-lg":"1.25rem","gutter-mobile":"0.75rem","space-md":"0.75rem","space-xl":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter":"1.25rem"},"fontFamily":{"display":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["15px",{"lineHeight":"22px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card border-r border-border-subtle z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-subtle"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZf7AfhdrpnCtJLaw1VhQYKGEJJ2gzRjlRkx3RuayC6qKH2uwXakRqFXw5wnpyGkaGirPAI5igTr7lgrJBPfVO_qeNQuWDbl5gRLQ9u9GVEv9rEF0nSK8w-alzfl1fx11yDj_KGfZLy79eX7cqTli3iZRPDM2UNZydnWZhJIr86vD5TprT78qaxYi0WxMJPfVSsA-RoNY2JQjOL5Ad10zy9b_3ak091Be3Gh6j4Cji9ZN-vBLbOsqfmuPx"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">TaskFlow</span><span class="font-label-sm text-label-sm text-text-muted">Enterprise Workspace</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Workspace Views</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></div><span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-text-secondary">Overview</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Tasks</span></div><span class="material-symbols-outlined text-[16px] text-text-muted">unfold_more</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="add-task" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">add_task</span><span class="font-body-md text-body-md">Add Task</span></div><span class="font-label-sm text-label-sm text-primary font-bold">+New</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="completed-tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-body-md text-body-md">Completed Tasks</span></div><span class="font-label-sm text-label-sm bg-status-closed-bg text-status-closed-text px-2 py-0.5 rounded-full font-bold">Archive</span></a></nav></div></div><div class="flex flex-col p-space-md border-t border-border-subtle bg-canvas-bg"><div class="flex items-center justify-between px-space-sm py-space-xs mb-space-xs rounded-lg bg-surface-card border border-border-subtle"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span class="font-label-md text-label-md text-text-secondary">Auth: Active</span></div><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-sm text-body-sm">Settings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-priority-high-text hover:bg-priority-high-bg transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-body-sm text-body-sm font-semibold">Log Out</span></a></nav></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-card/95 backdrop-blur-md border-b border-border-subtle z-40 px-space-lg flex items-center justify-between shadow-[0_1px_4px_rgba(15,23,42,0.03)]"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span><input class="w-full bg-canvas-bg border border-border-subtle rounded-lg pl-9 pr-4 py-1.5 font-body-sm text-body-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search tasks, tags, assignees..." type="text"/></div><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border-subtle bg-canvas-bg hover:bg-surface-container-low cursor-pointer transition-colors"><span class="material-symbols-outlined text-[18px] text-text-secondary">corporate_fare</span><span class="font-body-sm text-body-sm text-text-primary font-semibold whitespace-nowrap">Workspace: Academic &amp; Engineering</span><span class="material-symbols-outlined text-[18px] text-text-muted">expand_more</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary-container px-3.5 py-1.5 rounded-lg font-headline-sm text-headline-sm shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline font-headline-sm text-headline-sm">+ Add Task</span></button><button aria-label="Notifications" class="relative p-2 rounded-lg border border-border-subtle bg-surface-card hover:bg-surface-container-low text-text-secondary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-priority-high-text"></span></button><div class="flex items-center gap-space-sm pl-2 border-l border-border-subtle"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP_nIA5fH3Zy-RxNfYonVFP8CaRCnHU8FK1_a46KTRIVHqjgROkxi8qKNu_gO_RAvKV_XNgMWxXFG8uHLS8YuJQpbTBhIfOKqOwwg95UYa3WIY0NHcPFmlsH9FxdJcTcrbV9GT3FneXEd4DKElBoy5ThWllIRPO1Aa9nq3GqnBKlK6HZzDaTRScSwkyruuRwgXWYFJAk76Op9t6ESIkFTthFjEbeb07v5SG94ucqfl6Krj_2ElqpL31Q"/><div class="hidden lg:flex flex-col text-left"><span class="font-headline-sm text-headline-sm text-text-primary leading-tight">Jacob Jones</span><span class="font-label-sm text-label-sm text-status-closed-text font-bold flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-status-closed-text"></span>Available</span></div></div></div></header><div class="fixed top-16 left-64 right-0 h-10 bg-canvas-bg/95 backdrop-blur-sm border-b border-border-subtle z-30 px-space-lg flex items-center justify-between text-text-muted"><div class="flex items-center gap-2 font-body-sm text-body-sm"><span class="text-text-secondary">App</span><span class="text-text-muted">/</span><span class="text-text-secondary font-medium">Tasks</span><span class="text-text-muted">/</span><span class="text-primary font-semibold bg-primary-fixed px-2 py-0.5 rounded text-[12px]">/tasks</span></div><div class="flex items-center gap-3 font-label-md text-label-md text-text-muted"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span>Sync: Realtime</span><span class="h-3 w-[1px] bg-border-strong"></span><span>Branch: main-stable</span></div></div><main class="relative pt-28 pb-space-xl px-space-lg w-full bg-canvas-bg min-h-screen"><div class="flex flex-col w-full">
+<!-- Header Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Completed Tasks</h1>
+<span class="font-label-sm text-label-sm bg-status-closed-bg text-status-closed-text px-2.5 py-0.5 rounded-full flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Archive Vault
+        </span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-text-secondary px-2.5 py-0.5 rounded-full font-semibold">
+          Route: /tasks/completed (Protected View)
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary max-w-3xl">
+        Archived and resolved tasks marked as Closed. Review historical milestones, verify completion audit trails, and reopen tasks anytime.
+      </p>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center gap-2 flex-wrap">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-card hover:bg-surface-container-low text-text-secondary shadow-sm transition-all text-label-md font-label-md" id="exportCsvBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export Archive (CSV)
+      </button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container shadow-sm transition-all text-label-md font-label-md" id="batchReopenBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+        Bulk Reopen
+      </button>
+</div>
+</div>
+<!-- Stats Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Total Closed -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Total Closed Tasks</span>
+<div class="w-8 h-8 rounded-lg bg-status-closed-bg text-status-closed-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-text-primary" id="statTotal">13 Tasks</span>
+<span class="font-label-sm text-label-sm text-status-closed-text font-bold flex items-center">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> 100% Rate
+        </span>
+</div>
+<!-- Mini Sparkline inline SVG -->
+<div class="mt-3 w-full h-7">
+<svg class="w-full h-full text-status-closed-text" fill="none" preserveaspectratio="none" viewbox="0 0 160 28">
+<path d="M0,22 Q20,18 40,24 T80,12 T120,8 T160,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0,22 Q20,18 40,24 T80,12 T120,8 T160,2 L160,28 L0,28 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: Academic Completed -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Academic Completed</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-text-primary" id="statAcademic">8 Tasks</span>
+<span class="font-label-sm text-label-sm text-text-muted">61.5% of total</span>
+</div>
+<div class="mt-3 w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 61.5%;"></div>
+</div>
+</div>
+<!-- Card 3: Personal Completed -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Personal Completed</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-text-primary" id="statPersonal">5 Tasks</span>
+<span class="font-label-sm text-label-sm text-text-muted">38.5% of total</span>
+</div>
+<div class="mt-3 w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 38.5%;"></div>
+</div>
+</div>
+<!-- Card 4: Average Resolution Time -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Avg. Resolution Time</span>
+<div class="w-8 h-8 rounded-lg bg-status-pending-bg text-status-pending-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-text-primary">2.4 days</span>
+<span class="font-label-sm text-label-sm text-status-closed-text font-bold flex items-center">
+          -0.8d vs SLA
+        </span>
+</div>
+<div class="mt-3 flex items-center gap-1.5 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary-container">verified_user</span>
+<span>Consistent performance baseline</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Toolbar -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm mb-space-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-lg">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span>
+<input class="w-full bg-canvas-bg rounded-lg pl-9 pr-4 py-2 font-body-sm text-body-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="searchInput" placeholder="Search completed tasks by header or description..." type="text"/>
+</div>
+<!-- Filter Dropdowns & Sorter -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<!-- Category Filter -->
+<div class="flex items-center gap-1.5 bg-canvas-bg px-3 py-1.5 rounded-lg text-text-secondary">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Category:</span>
+<select class="bg-transparent font-body-sm text-body-sm text-text-primary focus:outline-none cursor-pointer" id="categoryFilter">
+<option value="All">All Categories</option>
+<option value="Academic">Academic</option>
+<option value="Personal">Personal</option>
+</select>
+</div>
+<!-- Priority Filter -->
+<div class="flex items-center gap-1.5 bg-canvas-bg px-3 py-1.5 rounded-lg text-text-secondary">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Priority:</span>
+<select class="bg-transparent font-body-sm text-body-sm text-text-primary focus:outline-none cursor-pointer" id="priorityFilter">
+<option value="All">All Priorities</option>
+<option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select>
+</div>
+<!-- Sort by -->
+<div class="flex items-center gap-1.5 bg-canvas-bg px-3 py-1.5 rounded-lg text-text-secondary">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Sort:</span>
+<select class="bg-transparent font-body-sm text-body-sm text-text-primary focus:outline-none cursor-pointer" id="sortFilter">
+<option value="newest">Closed Date (Newest first)</option>
+<option value="oldest">Closed Date (Oldest first)</option>
+<option value="name">Task Header (A - Z)</option>
+</select>
+</div>
+<!-- Reset button -->
+<button class="p-2 rounded-lg bg-canvas-bg hover:bg-surface-container-high text-text-muted hover:text-text-primary transition-colors" id="resetFiltersBtn" title="Reset Filters" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Notification Banner when actions occur -->
+<div class="hidden mb-space-md p-space-md rounded-xl bg-primary-container text-on-primary-container flex items-center justify-between shadow-md transition-all" id="toastNotification">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">info</span>
+<span class="font-body-md text-body-md font-semibold" id="toastMsg">Task status updated.</span>
+</div>
+<button class="text-on-primary-container hover:opacity-80" id="dismissToast">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Creekwood-Inspired Completed Tasks Table Card -->
+<div class="bg-surface-card rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Controls / Header Strip -->
+<div class="px-space-lg py-space-md bg-canvas-bg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded bg-text-primary accent-primary-container cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted font-bold">Select All (<span id="visibleCount">4</span>)</span>
+</div>
+<span class="text-text-muted">•</span>
+<span class="font-body-sm text-body-sm text-status-closed-text font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> All Resolved
+        </span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-text-muted">Showing 1-4 of 13 historical entries</span>
+</div>
+</div>
+<!-- Scrollable Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-card text-text-muted font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md w-12 text-center">Done</th>
+<th class="py-3 px-space-sm w-16 text-center">Owner</th>
+<th class="py-3 px-space-md w-28">Priority</th>
+<th class="py-3 px-space-md w-32">Category</th>
+<th class="py-3 px-space-md">Task Details &amp; Description</th>
+<th class="py-3 px-space-md w-48">Raised Timestamp</th>
+<th class="py-3 px-space-md w-56">Timeline / Closed</th>
+<th class="py-3 px-space-md w-28 text-center">Status</th>
+<th class="py-3 px-space-md w-32 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm" id="completedTasksTableBody">
+<!-- Row 1 -->
+<tr class="task-row group bg-surface-card hover:bg-canvas-bg transition-colors" data-category="Personal" data-closed="2024-08-23" data-header="Apply for Permits &amp; Approvals" data-id="1" data-priority="High">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="task-checkbox w-4 h-4 rounded accent-text-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-primary font-bold text-[11px] flex items-center justify-center mx-auto shadow-sm">
+                JJ
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-priority-high-bg text-priority-high-text font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                High
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed text-secondary font-semibold">
+                Personal
+              </span>
+</td>
+<td class="py-3.5 px-space-md min-w-[260px]">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary line-through opacity-70 group-hover:opacity-90 transition-opacity">
+                    Apply for Permits &amp; Approvals
+                  </span>
+<span class="material-symbols-outlined text-[16px] text-status-closed-text">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5 line-clamp-1">
+                  City engineering council zoning signoffs and environmental impact clearance documentation.
+                </p>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-text-secondary">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="font-medium text-text-primary">Aug 22, 2024</span>
+<span class="text-text-muted text-[11px]">08:30 AM</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-status-closed-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event_available</span>
+                  Closed: Aug 23, 2024
+                </span>
+<span class="text-text-muted text-[11px]">Due: 28 Aug 2026</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-status-closed-bg text-status-closed-text font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Closed
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="reopen-btn p-1.5 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Reopen Task" type="button">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-text-secondary hover:text-priority-high-text hover:bg-priority-high-bg transition-colors" title="Delete Permanently" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="task-row group bg-surface-card hover:bg-canvas-bg transition-colors" data-category="Academic" data-closed="2024-08-22" data-header="Documents &amp; Literature Review" data-id="2" data-priority="Low">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="task-checkbox w-4 h-4 rounded accent-text-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary font-bold text-[11px] flex items-center justify-center mx-auto shadow-sm">
+                MS
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-priority-low-bg text-priority-low-text font-bold">
+<span class="material-symbols-outlined text-[13px]">arrow_downward</span>
+                Low
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-semibold">
+                Academic
+              </span>
+</td>
+<td class="py-3.5 px-space-md min-w-[260px]">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary line-through opacity-70 group-hover:opacity-90 transition-opacity">
+                    Documents &amp; Literature Review
+                  </span>
+<span class="material-symbols-outlined text-[16px] text-status-closed-text">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5 line-clamp-1">
+                  Synthesize 14 peer-reviewed computer systems papers on distributed event-driven microservices.
+                </p>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-text-secondary">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="font-medium text-text-primary">Aug 21, 2024</span>
+<span class="text-text-muted text-[11px]">11:20 AM</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-status-closed-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event_available</span>
+                  Closed: Aug 22, 2024
+                </span>
+<span class="text-text-muted text-[11px]">Due: 28 Aug 2026</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-status-closed-bg text-status-closed-text font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Closed
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="reopen-btn p-1.5 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Reopen Task" type="button">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-text-secondary hover:text-priority-high-text hover:bg-priority-high-bg transition-colors" title="Delete Permanently" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="task-row group bg-surface-card hover:bg-canvas-bg transition-colors" data-category="Academic" data-closed="2024-08-21" data-header="Start Design Work" data-id="3" data-priority="Medium">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="task-checkbox w-4 h-4 rounded accent-text-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-primary font-bold text-[11px] flex items-center justify-center mx-auto shadow-sm">
+                JJ
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-priority-med-bg text-priority-med-text font-bold">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span>
+                Medium
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-semibold">
+                Academic
+              </span>
+</td>
+<td class="py-3.5 px-space-md min-w-[260px]">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary line-through opacity-70 group-hover:opacity-90 transition-opacity">
+                    Start Design Work
+                  </span>
+<span class="material-symbols-outlined text-[16px] text-status-closed-text">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5 line-clamp-1">
+                  Draft wireframes for lab simulator telemetry interface and user validation flow.
+                </p>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-text-secondary">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="font-medium text-text-primary">Aug 20, 2024</span>
+<span class="text-text-muted text-[11px]">09:15 AM</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-status-closed-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event_available</span>
+                  Closed: Aug 21, 2024
+                </span>
+<span class="text-text-muted text-[11px]">Due: 28 Aug 2026</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-status-closed-bg text-status-closed-text font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Closed
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="reopen-btn p-1.5 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Reopen Task" type="button">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-text-secondary hover:text-priority-high-text hover:bg-priority-high-bg transition-colors" title="Delete Permanently" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="task-row group bg-surface-card hover:bg-canvas-bg transition-colors" data-category="Personal" data-closed="2024-08-19" data-header="Health Insurance Policy Renewal" data-id="4" data-priority="High">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="task-checkbox w-4 h-4 rounded accent-text-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-sm text-center">
+<div class="w-7 h-7 rounded-full bg-status-pending-bg text-status-pending-text font-bold text-[11px] flex items-center justify-center mx-auto shadow-sm">
+                AL
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-priority-high-bg text-priority-high-text font-bold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                High
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed text-secondary font-semibold">
+                Personal
+              </span>
+</td>
+<td class="py-3.5 px-space-md min-w-[260px]">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary line-through opacity-70 group-hover:opacity-90 transition-opacity">
+                    Health Insurance Policy Renewal
+                  </span>
+<span class="material-symbols-outlined text-[16px] text-status-closed-text">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5 line-clamp-1">
+                  Updated annual dependent beneficiary list and submitted verification stubs for premium discounts.
+                </p>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap text-text-secondary">
+<div class="flex flex-col font-body-sm text-body-sm">
+<span class="font-medium text-text-primary">Aug 18, 2024</span>
+<span class="text-text-muted text-[11px]">03:00 PM</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-medium text-status-closed-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">event_available</span>
+                  Closed: Aug 19, 2024
+                </span>
+<span class="text-text-muted text-[11px]">Due: 28 Aug 2026</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-status-closed-bg text-status-closed-text font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Closed
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="reopen-btn p-1.5 rounded-lg text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors" title="Reopen Task" type="button">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+</button>
+<button class="delete-btn p-1.5 rounded-lg text-text-secondary hover:text-priority-high-text hover:bg-priority-high-bg transition-colors" title="Delete Permanently" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State Container (Displayed if all items are filtered/reopened) -->
+<div class="hidden flex flex-col items-center justify-center p-space-xl text-center" id="emptyState">
+<div class="w-16 h-16 rounded-full bg-status-closed-bg text-status-closed-text flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[32px]">inventory_2</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary">No Completed Tasks Found</h3>
+<p class="font-body-md text-body-md text-text-muted max-w-md mt-1">
+        All archived tasks have either been reopened back to active queues or no records match your active search filters.
+      </p>
+<button class="mt-space-md px-4 py-2 rounded-lg bg-canvas-bg hover:bg-surface-container-high text-primary font-headline-sm text-headline-sm transition-colors" id="resetFromEmpty" type="button">
+        Clear Filters
+      </button>
+</div>
+<!-- Smooth Pagination & Summary Footer -->
+<div class="px-space-lg py-space-md bg-canvas-bg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm text-text-muted font-body-sm text-body-sm">
+<span>Rows per page:</span>
+<select class="bg-surface-card rounded px-2 py-1 font-body-sm text-body-sm text-text-primary focus:outline-none">
+<option>10</option>
+<option selected="">25</option>
+<option>50</option>
+</select>
+<span>Page 1 of 1</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-card text-text-muted opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-card text-text-muted opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm" type="button">1</button>
+<button class="p-1.5 rounded-lg bg-surface-card hover:bg-surface-container-low text-text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-card hover:bg-surface-container-low text-text-secondary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Additional Context Card / Audit Log Banner -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">history_edu</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary">Immutable Audit Trail</span>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Every resolved task maintains an encrypted checksum and user attribution timestamp.</p>
+</div>
+</div>
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">cloud_sync</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary">Cloud Sync Redundancy</span>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Historical sprint data is replicated across all enterprise node regions every 6 hours.</p>
+</div>
+</div>
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-pending-text text-[24px]">security_update_good</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary">One-Click Restorations</span>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Reopening a task immediately puts it back into your team's live Kanban pipeline.</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initCompletedTasks() {
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const priorityFilter = document.getElementById('priorityFilter');
+    const sortFilter = document.getElementById('sortFilter');
+    const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+    const resetFromEmpty = document.getElementById('resetFromEmpty');
+    const tableBody = document.getElementById('completedTasksTableBody');
+    const emptyState = document.getElementById('emptyState');
+    const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+    const visibleCountSpan = document.getElementById('visibleCount');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    const dismissToast = document.getElementById('dismissToast');
+    const exportCsvBtn = document.getElementById('exportCsvBtn');
+    const batchReopenBtn = document.getElementById('batchReopenBtn');
+
+    function showToast(message) {
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+
+    dismissToast.addEventListener('click', () => {
+      toast.classList.add('hidden');
+    });
+
+    // Filtering & Searching Logic
+    function filterTasks() {
+      const query = (searchInput.value || '').toLowerCase().trim();
+      const category = categoryFilter.value;
+      const priority = priorityFilter.value;
+      const rows = Array.from(tableBody.querySelectorAll('.task-row'));
+      let visible = 0;
+
+      rows.forEach(row => {
+        const rowCategory = row.getAttribute('data-category');
+        const rowPriority = row.getAttribute('data-priority');
+        const rowHeader = (row.getAttribute('data-header') || '').toLowerCase();
+        const textContent = row.textContent.toLowerCase();
+
+        const matchesQuery = !query || rowHeader.includes(query) || textContent.includes(query);
+        const matchesCategory = category === 'All' || rowCategory === category;
+        const matchesPriority = priority === 'All' || rowPriority === priority;
+
+        if (matchesQuery && matchesCategory && matchesPriority) {
+          row.style.display = '';
+          visible++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      visibleCountSpan.textContent = visible;
+      if (visible === 0) {
+        tableBody.parentElement.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+      } else {
+        tableBody.parentElement.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+      }
+    }
+
+    // Sorting Logic
+    function sortTasks() {
+      const criteria = sortFilter.value;
+      const rows = Array.from(tableBody.querySelectorAll('.task-row'));
+
+      rows.sort((a, b) => {
+        if (criteria === 'name') {
+          return (a.getAttribute('data-header') || '').localeCompare(b.getAttribute('data-header') || '');
+        } else if (criteria === 'newest') {
+          return new Date(b.getAttribute('data-closed')) - new Date(a.getAttribute('data-closed'));
+        } else if (criteria === 'oldest') {
+          return new Date(a.getAttribute('data-closed')) - new Date(b.getAttribute('data-closed'));
+        }
+        return 0;
+      });
+
+      rows.forEach(r => tableBody.appendChild(r));
+    }
+
+    searchInput.addEventListener('input', filterTasks);
+    categoryFilter.addEventListener('change', filterTasks);
+    priorityFilter.addEventListener('change', filterTasks);
+    sortFilter.addEventListener('change', () => {
+      sortTasks();
+      filterTasks();
+    });
+
+    function resetAllFilters() {
+      searchInput.value = '';
+      categoryFilter.value = 'All';
+      priorityFilter.value = 'All';
+      sortFilter.value = 'newest';
+      filterTasks();
+      sortTasks();
+    }
+
+    resetFiltersBtn.addEventListener('click', resetAllFilters);
+    resetFromEmpty.addEventListener('click', resetAllFilters);
+
+    // Select all checkboxes toggle
+    selectAllCheckbox.addEventListener('change', (e) => {
+      const isChecked = e.target.checked;
+      const visibleCheckboxes = tableBody.querySelectorAll('.task-row:not([style*="display: none"]) .task-checkbox');
+      visibleCheckboxes.forEach(cb => {
+        cb.checked = isChecked;
+      });
+    });
+
+    // Row Actions: Reopen & Delete
+    tableBody.addEventListener('click', (e) => {
+      const reopenBtn = e.target.closest('.reopen-btn');
+      const deleteBtn = e.target.closest('.delete-btn');
+      const row = e.target.closest('.task-row');
+
+      if (reopenBtn && row) {
+        const title = row.getAttribute('data-header');
+        row.remove();
+        filterTasks();
+        showToast(`Task "${title}" reopened and restored to Active Tasks.`);
+      } else if (deleteBtn && row) {
+        const title = row.getAttribute('data-header');
+        row.remove();
+        filterTasks();
+        showToast(`Task "${title}" permanently removed from archive.`);
+      }
+    });
+
+    // Bulk Reopen Action
+    batchReopenBtn.addEventListener('click', () => {
+      const checkedRows = Array.from(tableBody.querySelectorAll('.task-row:not([style*="display: none"]) .task-checkbox:checked'))
+        .map(cb => cb.closest('.task-row'));
+
+      if (checkedRows.length === 0) {
+        showToast('Please select at least one task to reopen.');
+        return;
+      }
+
+      const count = checkedRows.length;
+      checkedRows.forEach(r => r.remove());
+      filterTasks();
+      showToast(`Successfully reopened ${count} task(s) to In Progress.`);
+    });
+
+    // CSV Export simulation
+    exportCsvBtn.addEventListener('click', () => {
+      const rows = Array.from(tableBody.querySelectorAll('.task-row:not([style*="display: none"])'));
+      let csvContent = "data:text/csv;charset=utf-8,Task Name,Category,Priority,Closed Date\n";
+      rows.forEach(r => {
+        const name = `"${r.getAttribute('data-header')}"`;
+        const cat = r.getAttribute('data-category');
+        const prio = r.getAttribute('data-priority');
+        const closed = r.getAttribute('data-closed');
+        csvContent += `${name},${cat},${prio},${closed}\n`;
+      });
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", `taskflow_completed_tasks_${new Date().toISOString().slice(0,10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast('Export archive initiated successfully.');
+    });
+  })();
+</script></main></div></body></html>

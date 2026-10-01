@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#5847d2","surface-bright":"#f8f9ff","text-primary":"#0F172A","on-surface-variant":"#474554","secondary-fixed-dim":"#adc6ff","primary":"#5341cd","priority-high-text":"#E11D48","tertiary":"#006645","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005236","surface":"#f8f9ff","on-background":"#0b1c30","text-secondary":"#475569","surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#002113","border-strong":"#CBD5E1","tertiary-container":"#008259","secondary":"#0058be","on-primary-container":"#faf6ff","on-error-container":"#93000a","inverse-surface":"#213145","secondary-container":"#2170e4","primary-fixed-dim":"#c6bfff","on-secondary-fixed":"#001a42","on-primary-fixed-variant":"#4029ba","on-surface":"#0b1c30","primary-fixed":"#e4dfff","surface-dim":"#cbdbf5","status-pending-bg":"#FEF3C7","inverse-primary":"#c6bfff","outline-variant":"#c8c4d7","on-secondary-fixed-variant":"#004395","on-primary":"#ffffff","priority-med-text":"#2563EB","on-primary-fixed":"#160066","priority-low-bg":"#DCFCE7","surface-container-high":"#dce9ff","surface-card":"#FFFFFF","on-tertiary":"#ffffff","on-secondary-container":"#fefcff","status-raised-bg":"#EFF6FF","status-raised-text":"#2563EB","background":"#f8f9ff","border-subtle":"#E2E8F0","status-closed-text":"#059669","status-closed-bg":"#ECFDF5","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","priority-low-text":"#16A34A","priority-high-bg":"#FFE4E6","surface-variant":"#d3e4fe","secondary-fixed":"#d8e2ff","priority-med-bg":"#EFF6FF","surface-container":"#e5eeff","outline":"#787586","canvas-bg":"#F8FAFC","surface-container-low":"#eff4ff","tertiary-fixed":"#6ffbbe","primary-container":"#6c5ce7","status-pending-text":"#D97706","on-tertiary-container":"#e1ffec","inverse-on-surface":"#eaf1ff","text-muted":"#94A3B8","error":"#ba1a1a","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-lg":"1.25rem","gutter-mobile":"0.75rem","space-md":"0.75rem","space-xl":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter":"1.25rem"},"fontFamily":{"display":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["15px",{"lineHeight":"22px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card border-r border-border-subtle z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-subtle"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZf7AfhdrpnCtJLaw1VhQYKGEJJ2gzRjlRkx3RuayC6qKH2uwXakRqFXw5wnpyGkaGirPAI5igTr7lgrJBPfVO_qeNQuWDbl5gRLQ9u9GVEv9rEF0nSK8w-alzfl1fx11yDj_KGfZLy79eX7cqTli3iZRPDM2UNZydnWZhJIr86vD5TprT78qaxYi0WxMJPfVSsA-RoNY2JQjOL5Ad10zy9b_3ak091Be3Gh6j4Cji9ZN-vBLbOsqfmuPx"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">TaskFlow</span><span class="font-label-sm text-label-sm text-text-muted">Enterprise Workspace</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Workspace Views</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></div><span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-text-secondary">Overview</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Tasks</span></div><span class="material-symbols-outlined text-[16px] text-text-muted">unfold_more</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="add-task" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">add_task</span><span class="font-body-md text-body-md">Add Task</span></div><span class="font-label-sm text-label-sm text-primary font-bold">+New</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="completed-tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-body-md text-body-md">Completed Tasks</span></div><span class="font-label-sm text-label-sm bg-status-closed-bg text-status-closed-text px-2 py-0.5 rounded-full font-bold">Archive</span></a></nav></div></div><div class="flex flex-col p-space-md border-t border-border-subtle bg-canvas-bg"><div class="flex items-center justify-between px-space-sm py-space-xs mb-space-xs rounded-lg bg-surface-card border border-border-subtle"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span class="font-label-md text-label-md text-text-secondary">Auth: Active</span></div><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-sm text-body-sm">Settings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-priority-high-text hover:bg-priority-high-bg transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-body-sm text-body-sm font-semibold">Log Out</span></a></nav></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-card/95 backdrop-blur-md border-b border-border-subtle z-40 px-space-lg flex items-center justify-between shadow-[0_1px_4px_rgba(15,23,42,0.03)]"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span><input class="w-full bg-canvas-bg border border-border-subtle rounded-lg pl-9 pr-4 py-1.5 font-body-sm text-body-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search tasks, tags, assignees..." type="text"/></div><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border-subtle bg-canvas-bg hover:bg-surface-container-low cursor-pointer transition-colors"><span class="material-symbols-outlined text-[18px] text-text-secondary">corporate_fare</span><span class="font-body-sm text-body-sm text-text-primary font-semibold whitespace-nowrap">Workspace: Academic &amp; Engineering</span><span class="material-symbols-outlined text-[18px] text-text-muted">expand_more</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary-container px-3.5 py-1.5 rounded-lg font-headline-sm text-headline-sm shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline font-headline-sm text-headline-sm">+ Add Task</span></button><button aria-label="Notifications" class="relative p-2 rounded-lg border border-border-subtle bg-surface-card hover:bg-surface-container-low text-text-secondary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-priority-high-text"></span></button><div class="flex items-center gap-space-sm pl-2 border-l border-border-subtle"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP_nIA5fH3Zy-RxNfYonVFP8CaRCnHU8FK1_a46KTRIVHqjgROkxi8qKNu_gO_RAvKV_XNgMWxXFG8uHLS8YuJQpbTBhIfOKqOwwg95UYa3WIY0NHcPFmlsH9FxdJcTcrbV9GT3FneXEd4DKElBoy5ThWllIRPO1Aa9nq3GqnBKlK6HZzDaTRScSwkyruuRwgXWYFJAk76Op9t6ESIkFTthFjEbeb07v5SG94ucqfl6Krj_2ElqpL31Q"/><div class="hidden lg:flex flex-col text-left"><span class="font-headline-sm text-headline-sm text-text-primary leading-tight">Jacob Jones</span><span class="font-label-sm text-label-sm text-status-closed-text font-bold flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-status-closed-text"></span>Available</span></div></div></div></header><div class="fixed top-16 left-64 right-0 h-10 bg-canvas-bg/95 backdrop-blur-sm border-b border-border-subtle z-30 px-space-lg flex items-center justify-between text-text-muted"><div class="flex items-center gap-2 font-body-sm text-body-sm"><span class="text-text-secondary">App</span><span class="text-text-muted">/</span><span class="text-text-secondary font-medium">Tasks</span><span class="text-text-muted">/</span><span class="text-primary font-semibold bg-primary-fixed px-2 py-0.5 rounded text-[12px]">/tasks</span></div><div class="flex items-center gap-3 font-label-md text-label-md text-text-muted"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span>Sync: Realtime</span><span class="h-3 w-[1px] bg-border-strong"></span><span>Branch: main-stable</span></div></div><main class="relative pt-28 pb-space-xl px-space-lg w-full bg-canvas-bg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Executive Action & Welcome Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Dashboard</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+          Route: /dashboard (Protected)
+        </span>
+</div>
+<p class="font-body-md text-body-md text-text-secondary">
+        Welcome back, <span class="font-semibold text-text-primary">Alex</span>. Here is your academic and personal task flow overview.
+      </p>
+</div>
+<!-- Action Group -->
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-card hover:bg-surface-container-low text-text-secondary hover:text-text-primary shadow-sm transition-all text-body-sm font-semibold active:scale-95" onclick="refreshDashboardData(this)" type="button">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-500" id="refresh-icon">sync</span>
+<span>Refresh Data</span>
+</button>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container shadow-md hover:shadow-lg font-headline-sm text-headline-sm transition-all active:scale-95" data-path="add-task" href="/tasks/new">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ New Task</span>
+</a>
+</div>
+</div>
+<!-- KPI Overview Metrics Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1: Total Tasks Raised -->
+<div class="relative overflow-hidden rounded-xl bg-surface-card p-space-lg shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">Total Tasks Raised</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">inbox</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-text-primary">24</span>
+<span class="inline-flex items-center text-status-closed-text font-label-sm text-label-sm font-bold bg-status-closed-bg px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>+12%
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">From last calendar cycle</p>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all duration-700" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Card 2: Pending Action -->
+<div class="relative overflow-hidden rounded-xl bg-surface-card p-space-lg shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">Pending Action</span>
+<div class="w-10 h-10 rounded-lg bg-status-pending-bg/50 flex items-center justify-center text-status-pending-text group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-text-primary">9</span>
+<span class="font-label-sm text-label-sm text-status-pending-text bg-status-pending-bg px-2 py-0.5 rounded-full font-bold">
+          In Review / Doing
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">3 awaiting peer approvals</p>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-status-pending-text h-full rounded-full transition-all duration-700" style="width: 38%;"></div>
+</div>
+</div>
+<!-- Card 3: Closed / Completed -->
+<div class="relative overflow-hidden rounded-xl bg-surface-card p-space-lg shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">Closed / Completed</span>
+<div class="w-10 h-10 rounded-lg bg-status-closed-bg flex items-center justify-center text-status-closed-text group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-text-primary">13</span>
+<span class="font-label-sm text-label-sm text-status-closed-text bg-status-closed-bg px-2 py-0.5 rounded-full font-bold">
+          54% Velocity
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">+4 tasks closed today</p>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-status-closed-text h-full rounded-full transition-all duration-700" style="width: 54%;"></div>
+</div>
+</div>
+<!-- Card 4: High Priority Due Soon -->
+<div class="relative overflow-hidden rounded-xl bg-surface-card p-space-lg shadow-sm hover:shadow-md transition-shadow group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">High Priority Due Soon</span>
+<div class="w-10 h-10 rounded-lg bg-priority-high-bg flex items-center justify-center text-priority-high-text group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display text-priority-high-text">4</span>
+<span class="font-label-sm text-label-sm text-priority-high-text bg-priority-high-bg px-2 py-0.5 rounded-full font-bold">
+          Due by 28 Aug 2026
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Requires immediate sign-off</p>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-priority-high-text h-full rounded-full transition-all duration-700" style="width: 90%;"></div>
+</div>
+</div>
+</section>
+<!-- Split Screen Analytics & Operational Content -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column (8 cols): Priority Metrics & Urgent Task Table -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Breakdown Bento Module -->
+<div class="rounded-xl bg-surface-card p-space-lg shadow-sm flex flex-col md:flex-row gap-space-lg items-stretch">
+<!-- Visual Mini Ring / Spark Chart -->
+<div class="flex items-center gap-space-lg pr-space-lg border-b md:border-b-0 md:border-r border-border-subtle pb-space-md md:pb-0">
+<div class="relative w-24 h-24 flex items-center justify-center shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<!-- Academic: 58% -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="58, 100" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Personal: 42% -->
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="42, 100" stroke-dashoffset="-58" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-text-primary leading-none">24</span>
+<span class="font-label-sm text-[10px] text-text-muted leading-tight">Total</span>
+</div>
+</div>
+<div class="flex flex-col justify-center gap-1.5">
+<span class="font-label-md text-label-md text-text-secondary uppercase">Domain Mix</span>
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-text-primary font-semibold">Academic: 14 tasks</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary"></span>
+<span class="font-body-sm text-body-sm text-text-primary font-semibold">Personal: 10 tasks</span>
+</div>
+</div>
+</div>
+<!-- Priority Distribution Bars -->
+<div class="flex-1 flex flex-col justify-center gap-2.5">
+<div class="flex items-center justify-between font-label-md text-label-md text-text-secondary">
+<span>Priority Distribution</span>
+<span class="font-body-sm text-body-sm text-text-muted">Weighted Impact</span>
+</div>
+<!-- High Priority Bar -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-priority-high-text font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                Urgent &amp; High
+              </span>
+<span class="text-text-secondary">4 tasks (17%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-priority-high-text h-full rounded-full" style="width: 17%"></div>
+</div>
+</div>
+<!-- Medium Priority Bar -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-priority-med-text font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span>
+                Medium Impact
+              </span>
+<span class="text-text-secondary">12 tasks (50%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 50%"></div>
+</div>
+</div>
+<!-- Low Priority Bar -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-priority-low-text font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">remove</span>
+                Standard / Low
+              </span>
+<span class="text-text-secondary">8 tasks (33%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 33%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Urgent Tasks Due Soon Data Table Card -->
+<div class="rounded-xl bg-surface-card shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-priority-high-bg text-priority-high-text">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-text-primary tracking-tight">Urgent Tasks Due Soon</h2>
+<p class="font-body-sm text-body-sm text-text-muted">High priority items needing action before the upcoming milestone</p>
+</div>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-primary-container font-bold flex items-center gap-1" data-path="tasks" href="/tasks">
+<span>View All</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Task Table View Inspired by Creekwood Construction -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-canvas-bg font-label-sm text-label-sm text-text-muted uppercase tracking-wider">
+<th class="py-3 px-4 w-12 text-center">Done</th>
+<th class="py-3 px-3">Priority</th>
+<th class="py-3 px-3">Domain</th>
+<th class="py-3 px-4 min-w-[200px]">Task Header</th>
+<th class="py-3 px-3 hidden sm:table-cell">Raised Timestamp</th>
+<th class="py-3 px-3">Due Date</th>
+<th class="py-3 px-4 text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle font-body-sm text-body-sm text-text-primary">
+<!-- Row 1: TASK-101 Thesis Review -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="window.location.href='/tasks/TASK-101'">
+<td class="py-3.5 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container cursor-pointer" onchange="toggleTaskDone(this)" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full bg-priority-high-bg text-priority-high-text">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    High
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-primary-fixed text-on-primary-fixed">
+                    Academic
+                  </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors flex items-center gap-1.5">
+                      Thesis Review &amp; Abstract Signoff
+                      <span class="material-symbols-outlined text-[15px] opacity-0 group-hover:opacity-100 text-primary transition-opacity">open_in_new</span>
+</span>
+<span class="font-label-sm text-label-sm text-text-muted">TASK-101 • Dr. Aris Thorne</span>
+</div>
+</td>
+<td class="py-3.5 px-3 hidden sm:table-cell text-text-muted text-[12px]">
+                  Oct 24, 2024 • 10:15 AM
+                </td>
+<td class="py-3.5 px-3 font-semibold text-priority-high-text">
+                  28 Aug 2026
+                </td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-status-raised-bg text-status-raised-text">
+<span class="h-1.5 w-1.5 rounded-full bg-status-raised-text animate-pulse"></span>
+                    Raised
+                  </span>
+</td>
+</tr>
+<!-- Row 2: TASK-102 Algorithm Benchmark Lab -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="window.location.href='/tasks/TASK-102'">
+<td class="py-3.5 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container cursor-pointer" onchange="toggleTaskDone(this)" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full bg-priority-high-bg text-priority-high-text">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    High
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-primary-fixed text-on-primary-fixed">
+                    Academic
+                  </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors flex items-center gap-1.5">
+                      Distributed Algorithm Benchmark Lab
+                      <span class="material-symbols-outlined text-[15px] opacity-0 group-hover:opacity-100 text-primary transition-opacity">open_in_new</span>
+</span>
+<span class="font-label-sm text-label-sm text-text-muted">TASK-102 • CS-504 Systems</span>
+</div>
+</td>
+<td class="py-3.5 px-3 hidden sm:table-cell text-text-muted text-[12px]">
+                  Oct 24, 2024 • 11:30 AM
+                </td>
+<td class="py-3.5 px-3 font-semibold text-priority-high-text">
+                  28 Aug 2026
+                </td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-status-pending-bg text-status-pending-text">
+<span class="h-1.5 w-1.5 rounded-full bg-status-pending-text"></span>
+                    Pending
+                  </span>
+</td>
+</tr>
+<!-- Row 3: TASK-103 Apartment Lease Extension -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="window.location.href='/tasks/TASK-103'">
+<td class="py-3.5 px-4 text-center" onclick="event.stopPropagation()">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-primary-container cursor-pointer" onchange="toggleTaskDone(this)" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full bg-priority-high-bg text-priority-high-text">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                    High
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-tertiary-fixed text-on-tertiary-fixed">
+                    Personal
+                  </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="task-title font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors flex items-center gap-1.5">
+                      Apartment Lease Extension Notary
+                      <span class="material-symbols-outlined text-[15px] opacity-0 group-hover:opacity-100 text-primary transition-opacity">open_in_new</span>
+</span>
+<span class="font-label-sm text-label-sm text-text-muted">TASK-103 • Legal Docs</span>
+</div>
+</td>
+<td class="py-3.5 px-3 hidden sm:table-cell text-text-muted text-[12px]">
+                  Oct 25, 2024 • 09:00 AM
+                </td>
+<td class="py-3.5 px-3 font-semibold text-priority-high-text">
+                  28 Aug 2026
+                </td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-status-raised-bg text-status-raised-text">
+<span class="h-1.5 w-1.5 rounded-full bg-status-raised-text"></span>
+                    Raised
+                  </span>
+</td>
+</tr>
+<!-- Row 4: TASK-104 Cardiology Health Checkup -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="window.location.href='/tasks/TASK-104'">
+<td class="py-3.5 px-4 text-center" onclick="event.stopPropagation()">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-primary-container cursor-pointer" onchange="toggleTaskDone(this)" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full bg-priority-med-bg text-priority-med-text">
+<span class="material-symbols-outlined text-[12px]">arrow_upward</span>
+                    Med
+                  </span>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-tertiary-fixed text-on-tertiary-fixed">
+                    Personal
+                  </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="task-title font-headline-sm text-headline-sm text-text-muted line-through group-hover:text-primary transition-colors flex items-center gap-1.5">
+                      Doctor Appointment &amp; Lab Bloodwork
+                      <span class="material-symbols-outlined text-[15px] opacity-0 group-hover:opacity-100 text-primary transition-opacity">open_in_new</span>
+</span>
+<span class="font-label-sm text-label-sm text-text-muted">TASK-104 • City Clinic</span>
+</div>
+</td>
+<td class="py-3.5 px-3 hidden sm:table-cell text-text-muted text-[12px]">
+                  Oct 23, 2024 • 04:45 PM
+                </td>
+<td class="py-3.5 px-3 font-semibold text-text-secondary">
+                  26 Aug 2026
+                </td>
+<td class="py-3.5 px-4 text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-status-closed-bg text-status-closed-text">
+<span class="material-symbols-outlined text-[13px]">check</span>
+                    Closed
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Quick Kanban Preview Peek (Inspired by ToDoi Screen) -->
+<div class="rounded-xl bg-surface-card p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">view_column</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Active Sprints In Progress</h3>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Drag &amp; Drop Ready</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Mini Kanban Card A -->
+<div class="p-space-md rounded-lg bg-canvas-bg hover:bg-surface-container-low transition-all shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Content Writing &amp; Research</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-priority-high-bg text-priority-high-text font-bold">High</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px]">calendar_month</span>
+<span>19-23 Aug 2026</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 65%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center -space-x-2">
+<img class="w-6 h-6 rounded-full object-cover ring-2 ring-surface-card" data-alt="Close up professional portrait of a research peer collaborator with glasses and warm ambient library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq3O3614aWmJWA8W03pkOe0lWfeQk6ibm9Dn_xlYkO2EKpB8Z_cKIx8LgvXcAsjv833JfHLCHvHraotzl1rajDjSDYtCiQAnzqiq5PvIOk7YiXRPbGI9k_gzKRKKoIWhV0k0Y6yh1lMkj0UKU363G7BQmqxp-9sluT8F4Wk_aDDUMOjZRSY1nl1lgAueLNEYqL-Y1lPVGrM32LmUQcvWeXomWGCo3sBkQuJRvSpM-IUFulk_bZtamu3Q"/>
+<img class="w-6 h-6 rounded-full object-cover ring-2 ring-surface-card" data-alt="Portrait of an engineering teammate smiling in a tech laboratory environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyM9vK2CZ42s4C6AfoycQ3Vht86iIe2Xh-P3SPR8-3DS-AduC8PAjvKRc30OvDavz6IiC59ypBphc13SGFxZHaKlNn06qkBgJdbidAT9KDkmXq2RMdPi_gyaDiAsjUsLsDKt3QWd07tRdGzMaMPXfs5HZUtR_cmUL7YM5Lwuu746ENWcCmHoolzZ1Uj-RGwJvmFCuPz8H--gOPia__c-nXMwqfPibx-cFYTSbwiRrLEcfMm9Er1he9YA"/>
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-primary font-label-sm text-[10px] flex items-center justify-center font-bold ring-2 ring-surface-card">+2</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-semibold">65% Done</span>
+</div>
+</div>
+<!-- Mini Kanban Card B -->
+<div class="p-space-md rounded-lg bg-canvas-bg hover:bg-surface-container-low transition-all shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between">
+<span class="font-headline-sm text-headline-sm text-text-primary">Study Case Evaluation</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-priority-low-bg text-priority-low-text font-bold">Low</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[15px]">calendar_month</span>
+<span>22-27 Aug 2026</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-status-closed-text h-full rounded-full" style="width: 40%;"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center -space-x-2">
+<img class="w-6 h-6 rounded-full object-cover ring-2 ring-surface-card" data-alt="Portrait of graduate student working in modern computer workstation room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7_3vtRKqNN4rNpV2W86OLi66LIcmCsIQe7iUaoc8UL99RxM8xwMCsKF8vyrecFvaULdz3ELkwTKQpOqIUfaVBIRnvwst2j4nPK6ZY7fdGHTpgsoFKrjmpwWEKDRgUKjPvbWroaF4DPfibK-DexrHUL0GTfLmmiaXT1oZJLfevOllRvckbuC9s539CCesmyqK-ntNyGgQJsSu4hOP6BkJF1dhC22djHthsQRE_nQtnpKsMKc3v7Doqtw"/>
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-text-muted text-[13px] ring-2 ring-surface-card">+</div>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-semibold">40% Done</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (4 cols): Protected Auth Status, Category Summary & Activity Feed -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Protected Route Status Auth Card -->
+<div class="rounded-xl bg-surface-card p-space-lg shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-text-primary">Security Context</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold bg-tertiary-fixed/40 px-2 py-0.5 rounded-full">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary animate-ping"></span>
+            Live
+          </span>
+</div>
+<div class="space-y-3 font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-canvas-bg">
+<span class="text-text-muted">User Role</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Student / Team Lead</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-canvas-bg">
+<span class="text-text-muted">Auth Token</span>
+<div class="flex items-center gap-1 text-status-closed-text font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Valid (Bearer JWT)</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-canvas-bg">
+<span class="text-text-muted">Session TTL</span>
+<span class="font-body-sm text-body-sm text-status-pending-text font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+              Expires in 4h 12m
+            </span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-border-subtle flex items-center justify-between text-label-sm font-label-sm text-text-muted">
+<span>React Router Auth Provider</span>
+<span class="font-mono text-primary bg-primary-fixed px-1.5 py-0.5 rounded">Outlet OK</span>
+</div>
+</div>
+<!-- Category Summary Card -->
+<div class="rounded-xl bg-surface-card p-space-lg shadow-sm">
+<h3 class="font-headline-md text-headline-md text-text-primary mb-space-sm">Category Summary</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">Realtime split between academic commitments and personal life management.</p>
+<div class="flex flex-col gap-space-md">
+<!-- Academic Group -->
+<div class="rounded-lg p-space-md bg-canvas-bg">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">school</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Academic Track</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-primary-fixed text-primary px-2 py-0.5 rounded-full">14 Tasks</span>
+</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-text-secondary pl-6 list-disc">
+<li>Thesis Review &amp; Abstract Signoff</li>
+<li>Distributed Systems Lab Assignment</li>
+<li>Algorithm Complexity Final Exam</li>
+</ul>
+</div>
+<!-- Personal Group -->
+<div class="rounded-lg p-space-md bg-canvas-bg">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">cottage</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Personal Track</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full">10 Tasks</span>
+</div>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-text-secondary pl-6 list-disc">
+<li>Apartment Lease Extension</li>
+<li>Semi-Annual Marathon Workout Plan</li>
+<li>Doctor Appointment Checkup</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Activity Feed -->
+<div class="rounded-xl bg-surface-card p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-md text-headline-md text-text-primary">Recent Transitions</h3>
+<span class="font-label-sm text-label-sm text-primary font-bold">Auto-Sync</span>
+</div>
+<div class="relative pl-6 space-y-space-md before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Item 1 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 h-2.5 w-2.5 rounded-full bg-status-closed-text ring-4 ring-surface-card"></span>
+<div class="font-body-sm text-body-sm text-text-primary">
+<span class="font-semibold text-status-closed-text">Closed</span> "Apply for Permit"
+            </div>
+<span class="font-label-sm text-label-sm text-text-muted">15 minutes ago • Jacob Jones</span>
+</div>
+<!-- Item 2 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 h-2.5 w-2.5 rounded-full bg-status-pending-text ring-4 ring-surface-card"></span>
+<div class="font-body-sm text-body-sm text-text-primary">
+<span class="font-semibold text-status-pending-text">Moved to In Review</span> "Algorithm Benchmark"
+            </div>
+<span class="font-label-sm text-label-sm text-text-muted">1 hour ago • Alex</span>
+</div>
+<!-- Item 3 -->
+<div class="relative flex flex-col gap-0.5">
+<span class="absolute -left-6 top-1 h-2.5 w-2.5 rounded-full bg-primary-container ring-4 ring-surface-card"></span>
+<div class="font-body-sm text-body-sm text-text-primary">
+<span class="font-semibold text-primary">New Task Created</span> "Apartment Lease"
+            </div>
+<span class="font-label-sm text-label-sm text-text-muted">3 hours ago • Alex</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleTaskDone(checkbox) {
+    const row = checkbox.closest('tr');
+    const title = row.querySelector('.task-title');
+    if (checkbox.checked) {
+      title.classList.add('line-through', 'text-text-muted');
+      row.style.opacity = '0.6';
+    } else {
+      title.classList.remove('line-through', 'text-text-muted');
+      row.style.opacity = '1';
+    }
+  }
+
+  function refreshDashboardData(btn) {
+    const icon = document.getElementById('refresh-icon');
+    if (icon) {
+      icon.classList.add('rotate-180');
+      setTimeout(() => {
+        icon.classList.remove('rotate-180');
+      }, 500);
+    }
+  }
+</script></main></div></body></html>

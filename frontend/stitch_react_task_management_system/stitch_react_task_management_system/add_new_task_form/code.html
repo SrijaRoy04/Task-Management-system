@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#5847d2","surface-bright":"#f8f9ff","text-primary":"#0F172A","on-surface-variant":"#474554","secondary-fixed-dim":"#adc6ff","primary":"#5341cd","priority-high-text":"#E11D48","tertiary":"#006645","error-container":"#ffdad6","on-tertiary-fixed-variant":"#005236","surface":"#f8f9ff","on-background":"#0b1c30","text-secondary":"#475569","surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#002113","border-strong":"#CBD5E1","tertiary-container":"#008259","secondary":"#0058be","on-primary-container":"#faf6ff","on-error-container":"#93000a","inverse-surface":"#213145","secondary-container":"#2170e4","primary-fixed-dim":"#c6bfff","on-secondary-fixed":"#001a42","on-primary-fixed-variant":"#4029ba","on-surface":"#0b1c30","primary-fixed":"#e4dfff","surface-dim":"#cbdbf5","status-pending-bg":"#FEF3C7","inverse-primary":"#c6bfff","outline-variant":"#c8c4d7","on-secondary-fixed-variant":"#004395","on-primary":"#ffffff","priority-med-text":"#2563EB","on-primary-fixed":"#160066","priority-low-bg":"#DCFCE7","surface-container-high":"#dce9ff","surface-card":"#FFFFFF","on-tertiary":"#ffffff","on-secondary-container":"#fefcff","status-raised-bg":"#EFF6FF","status-raised-text":"#2563EB","background":"#f8f9ff","border-subtle":"#E2E8F0","status-closed-text":"#059669","status-closed-bg":"#ECFDF5","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","priority-low-text":"#16A34A","priority-high-bg":"#FFE4E6","surface-variant":"#d3e4fe","secondary-fixed":"#d8e2ff","priority-med-bg":"#EFF6FF","surface-container":"#e5eeff","outline":"#787586","canvas-bg":"#F8FAFC","surface-container-low":"#eff4ff","tertiary-fixed":"#6ffbbe","primary-container":"#6c5ce7","status-pending-text":"#D97706","on-tertiary-container":"#e1ffec","inverse-on-surface":"#eaf1ff","text-muted":"#94A3B8","error":"#ba1a1a","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-lg":"1.25rem","gutter-mobile":"0.75rem","space-md":"0.75rem","space-xl":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter":"1.25rem"},"fontFamily":{"display":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["15px",{"lineHeight":"22px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card border-r border-border-subtle z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-subtle"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZf7AfhdrpnCtJLaw1VhQYKGEJJ2gzRjlRkx3RuayC6qKH2uwXakRqFXw5wnpyGkaGirPAI5igTr7lgrJBPfVO_qeNQuWDbl5gRLQ9u9GVEv9rEF0nSK8w-alzfl1fx11yDj_KGfZLy79eX7cqTli3iZRPDM2UNZydnWZhJIr86vD5TprT78qaxYi0WxMJPfVSsA-RoNY2JQjOL5Ad10zy9b_3ak091Be3Gh6j4Cji9ZN-vBLbOsqfmuPx"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">TaskFlow</span><span class="font-label-sm text-label-sm text-text-muted">Enterprise Workspace</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Workspace Views</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></div><span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-text-secondary">Overview</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Tasks</span></div><span class="material-symbols-outlined text-[16px] text-text-muted">unfold_more</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-2.5 transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="add-task" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">add_task</span><span class="font-body-md text-body-md">Add Task</span></div><span class="font-label-sm text-label-sm text-primary font-bold">+New</span></a><a class="flex items-center justify-between px-space-md py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="completed-tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-body-md text-body-md">Completed Tasks</span></div><span class="font-label-sm text-label-sm bg-status-closed-bg text-status-closed-text px-2 py-0.5 rounded-full font-bold">Archive</span></a></nav></div></div><div class="flex flex-col p-space-md border-t border-border-subtle bg-canvas-bg"><div class="flex items-center justify-between px-space-sm py-space-xs mb-space-xs rounded-lg bg-surface-card border border-border-subtle"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary-container">lock</span><span class="font-label-md text-label-md text-text-secondary">Auth: Active</span></div><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-text-secondary hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-sm text-body-sm">Settings</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-priority-high-text hover:bg-priority-high-bg transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-body-sm text-body-sm font-semibold">Log Out</span></a></nav></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-card/95 backdrop-blur-md border-b border-border-subtle z-40 px-space-lg flex items-center justify-between shadow-[0_1px_4px_rgba(15,23,42,0.03)]"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span><input class="w-full bg-canvas-bg border border-border-subtle rounded-lg pl-9 pr-4 py-1.5 font-body-sm text-body-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search tasks, tags, assignees..." type="text"/></div><div class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border-subtle bg-canvas-bg hover:bg-surface-container-low cursor-pointer transition-colors"><span class="material-symbols-outlined text-[18px] text-text-secondary">corporate_fare</span><span class="font-body-sm text-body-sm text-text-primary font-semibold whitespace-nowrap">Workspace: Academic &amp; Engineering</span><span class="material-symbols-outlined text-[18px] text-text-muted">expand_more</span></div></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary-container px-3.5 py-1.5 rounded-lg font-headline-sm text-headline-sm shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline font-headline-sm text-headline-sm">+ Add Task</span></button><button aria-label="Notifications" class="relative p-2 rounded-lg border border-border-subtle bg-surface-card hover:bg-surface-container-low text-text-secondary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-priority-high-text"></span></button><div class="flex items-center gap-space-sm pl-2 border-l border-border-subtle"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP_nIA5fH3Zy-RxNfYonVFP8CaRCnHU8FK1_a46KTRIVHqjgROkxi8qKNu_gO_RAvKV_XNgMWxXFG8uHLS8YuJQpbTBhIfOKqOwwg95UYa3WIY0NHcPFmlsH9FxdJcTcrbV9GT3FneXEd4DKElBoy5ThWllIRPO1Aa9nq3GqnBKlK6HZzDaTRScSwkyruuRwgXWYFJAk76Op9t6ESIkFTthFjEbeb07v5SG94ucqfl6Krj_2ElqpL31Q"/><div class="hidden lg:flex flex-col text-left"><span class="font-headline-sm text-headline-sm text-text-primary leading-tight">Jacob Jones</span><span class="font-label-sm text-label-sm text-status-closed-text font-bold flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-status-closed-text"></span>Available</span></div></div></div></header><div class="fixed top-16 left-64 right-0 h-10 bg-canvas-bg/95 backdrop-blur-sm border-b border-border-subtle z-30 px-space-lg flex items-center justify-between text-text-muted"><div class="flex items-center gap-2 font-body-sm text-body-sm"><span class="text-text-secondary">App</span><span class="text-text-muted">/</span><span class="text-text-secondary font-medium">Tasks</span><span class="text-text-muted">/</span><span class="text-primary font-semibold bg-primary-fixed px-2 py-0.5 rounded text-[12px]">/tasks</span></div><div class="flex items-center gap-3 font-label-md text-label-md text-text-muted"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span>Sync: Realtime</span><span class="h-3 w-[1px] bg-border-strong"></span><span>Branch: main-stable</span></div></div><main class="relative pt-28 pb-space-xl px-space-lg w-full bg-canvas-bg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & Breadcrumb Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-text-muted">App</span>
+<span class="font-label-sm text-label-sm text-text-muted">/</span>
+<a class="font-label-sm text-label-sm text-text-secondary hover:text-primary transition-colors" data-path="tasks" href="#">Tasks</a>
+<span class="font-label-sm text-label-sm text-text-muted">/</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">New Task</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Add New Task</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+<span>Route: /tasks/new (Protected Form)</span>
+</div>
+<span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+</div>
+<!-- Main 2-Column Responsive Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Primary Task Form (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Primary Form Container -->
+<form class="bg-surface-card rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg" id="task-creation-form" onsubmit="event.preventDefault();">
+<!-- Header Section -->
+<div class="flex flex-col gap-1 pb-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Task Metadata &amp; Specification</span>
+<span class="font-label-sm text-label-sm text-text-muted">* Indicates required field</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Standardize team objectives, assign ownership parameters, and schedule due milestones.</p>
+</div>
+<!-- 1. Task Header Input -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center gap-1" for="task-title-input">
+              Task Header
+              <span class="text-priority-high-text font-bold">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-text-muted" id="title-char-count">0 / 96 chars</span>
+</div>
+<div class="relative">
+<input class="w-full bg-canvas-bg rounded-lg px-4 py-3 font-body-md text-body-md text-text-primary placeholder:text-text-muted focus:outline-none focus:bg-surface-card focus:shadow-md transition-all" id="task-title-input" maxlength="96" placeholder="e.g., Final Thesis Submission &amp; Defense" required="" type="text"/>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-text-muted">info</span>
+            A concise, action-oriented title for the task.
+          </p>
+</div>
+<!-- 2. Task Description Textarea with Custom Rich Toolbar -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center gap-1" for="task-desc-input">
+              Task Description
+              <span class="text-priority-high-text font-bold">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-text-muted">Markdown Supported</span>
+</div>
+<div class="flex flex-col rounded-lg bg-canvas-bg overflow-hidden shadow-sm focus-within:bg-surface-card focus-within:shadow-md transition-all">
+<!-- Toolbar -->
+<div class="flex items-center gap-1 px-3 py-2 bg-surface-container-low text-text-secondary">
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Bold" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Italic" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Underline" type="button">
+<span class="material-symbols-outlined text-[18px]">format_underlined</span>
+</button>
+<span class="h-4 w-[1px] bg-border-strong mx-1"></span>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Bulleted List" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Numbered List" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_numbered</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Code Block" type="button">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</button>
+<span class="h-4 w-[1px] bg-border-strong mx-1"></span>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors" title="Insert Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container hover:text-text-primary transition-colors ml-auto text-text-muted hover:text-text-primary" title="Clear Formatting" type="button">
+<span class="material-symbols-outlined text-[18px]">format_clear</span>
+</button>
+</div>
+<!-- Content Area -->
+<textarea class="w-full bg-transparent px-4 py-3 font-body-md text-body-md text-text-primary placeholder:text-text-muted focus:outline-none resize-y min-h-[110px]" id="task-desc-input" placeholder="Provide detailed requirements, context, and deliverables..." required="" rows="4"></textarea>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Brief descriptions boost team execution velocity by 34%.</span>
+</div>
+<!-- 3. Priority Selection (Interactive Segmented Cards) -->
+<div class="flex flex-col gap-2">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center justify-between">
+<span>Priority Level <span class="text-priority-high-text font-bold">*</span></span>
+<span class="font-label-sm text-label-sm text-text-muted">Escalation weight</span>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3" id="priority-options">
+<!-- High Priority -->
+<div class="priority-card cursor-pointer rounded-lg p-3 bg-priority-high-bg text-priority-high-text shadow-sm transition-all flex flex-col gap-1.5" data-priority="High">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>High</span>
+</div>
+<span class="priority-radio-check h-4 w-4 rounded-full bg-priority-high-text text-on-primary flex items-center justify-center text-[10px]">✓</span>
+</div>
+<p class="font-label-sm text-label-sm opacity-90">Immediate attention needed &amp; blocker mitigation</p>
+</div>
+<!-- Medium Priority -->
+<div class="priority-card cursor-pointer rounded-lg p-3 bg-surface-container hover:bg-priority-med-bg text-text-secondary hover:text-priority-med-text transition-all flex flex-col gap-1.5" data-priority="Medium">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span>Medium</span>
+</div>
+<span class="priority-radio-check h-4 w-4 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center text-[10px]">✓</span>
+</div>
+<p class="font-label-sm text-label-sm opacity-80">Standard sprint pipeline &amp; routine delivery</p>
+</div>
+<!-- Low Priority -->
+<div class="priority-card cursor-pointer rounded-lg p-3 bg-surface-container hover:bg-priority-low-bg text-text-secondary hover:text-priority-low-text transition-all flex flex-col gap-1.5" data-priority="Low">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Low</span>
+</div>
+<span class="priority-radio-check h-4 w-4 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center text-[10px]">✓</span>
+</div>
+<p class="font-label-sm text-label-sm opacity-80">Backlog, enhancement or flexible deadline</p>
+</div>
+</div>
+</div>
+<!-- 4. Category Selector (Radio Chips) -->
+<div class="flex flex-col gap-2">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center justify-between">
+<span>Task Category <span class="text-priority-high-text font-bold">*</span></span>
+<span class="font-label-sm text-label-sm text-text-muted">Scope segregation</span>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="category-selector">
+<label class="category-chip cursor-pointer flex items-center gap-3 p-3.5 rounded-lg bg-surface-container-high text-primary shadow-sm transition-all">
+<input checked="" class="hidden" name="task-category" type="radio" value="Academic"/>
+<div class="h-8 w-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold">Academic</span>
+<span class="font-label-sm text-label-sm text-text-secondary">University, research, study tasks</span>
+</div>
+</label>
+<label class="category-chip cursor-pointer flex items-center gap-3 p-3.5 rounded-lg bg-canvas-bg hover:bg-surface-container-low text-text-secondary transition-all">
+<input class="hidden" name="task-category" type="radio" value="Personal"/>
+<div class="h-8 w-8 rounded-lg bg-surface-container text-text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person_celebrate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold">Personal</span>
+<span class="font-label-sm text-label-sm text-text-muted">Life, errands, health, finance</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Dual Column: 5. Raised Date (Auto) & 6. Due Date -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- 5. Raised Date and Time (System Auto Picked) -->
+<div class="flex flex-col gap-2">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">lock</span>
+                Raised Date &amp; Time
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">Auto-Generated</span>
+</label>
+<div class="flex flex-col p-3 rounded-lg bg-canvas-bg shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-text-muted">schedule</span>
+<span class="font-label-md text-label-md text-text-primary font-bold" id="raised-timestamp-val">24 Oct 2024, 14:32:05 EST</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted mt-1.5 flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-status-closed-text"></span>
+                Generated dynamically via Date.now() on task submission.
+              </span>
+</div>
+</div>
+<!-- 6. Due Date Field with Presets -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center gap-1" for="task-due-date">
+                Due Date
+                <span class="text-priority-high-text font-bold">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-text-muted">Target milestone</span>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary text-[18px]">calendar_month</span>
+<input class="w-full bg-canvas-bg rounded-lg pl-9 pr-4 py-2.5 font-body-md text-body-md text-text-primary font-semibold focus:outline-none focus:bg-surface-card focus:shadow-md transition-all" id="task-due-date" required="" type="text" value="28 Aug 2026"/>
+</div>
+<!-- Quick Presets -->
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-label-sm text-text-muted mr-1">Presets:</span>
+<button class="font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded hover:bg-surface-container-high hover:text-primary transition-colors" onclick="setDueDatePreset('05 Sep 2026')" type="button">+1 Week</button>
+<button class="font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded hover:bg-surface-container-high hover:text-primary transition-colors" onclick="setDueDatePreset('31 Aug 2026')" type="button">End of Month</button>
+<button class="font-label-sm text-label-sm bg-primary-fixed text-primary px-2.5 py-1 rounded font-bold transition-colors" onclick="setDueDatePreset('28 Aug 2026')" type="button">28 Aug 2026</button>
+</div>
+</div>
+</div>
+<!-- 7. Initial Status Segmented Option -->
+<div class="flex flex-col gap-2">
+<label class="font-headline-sm text-headline-sm text-text-primary flex items-center justify-between">
+<span>Initial Workflow Status</span>
+<span class="font-label-sm text-label-sm text-text-muted">State machine initial entry</span>
+</label>
+<div class="grid grid-cols-3 gap-2 bg-canvas-bg p-1.5 rounded-lg" id="status-toggle-group">
+<!-- Raised (Default) -->
+<button class="status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm bg-status-raised-bg text-status-raised-text shadow-sm transition-all" data-status="Raised" type="button">
+<span class="h-2 w-2 rounded-full bg-status-raised-text"></span>
+<span>Raised</span>
+</button>
+<!-- Pending -->
+<button class="status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm text-text-secondary hover:text-on-surface transition-all" data-status="Pending" type="button">
+<span class="h-2 w-2 rounded-full bg-status-pending-text opacity-50"></span>
+<span>Pending</span>
+</button>
+<!-- Closed -->
+<button class="status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm text-text-secondary hover:text-on-surface transition-all" data-status="Closed" type="button">
+<span class="h-2 w-2 rounded-full bg-status-closed-text opacity-50"></span>
+<span>Closed</span>
+</button>
+</div>
+</div>
+<!-- Form Submission & Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg">
+<a class="w-full sm:w-auto px-5 py-2.5 rounded-lg text-text-secondary hover:bg-surface-container-high hover:text-text-primary font-headline-sm text-headline-sm text-center transition-colors" data-path="tasks" href="#">
+            Cancel
+          </a>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<button class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-text-primary font-headline-sm text-headline-sm transition-all shadow-sm flex items-center justify-center gap-1.5" id="save-draft-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save as Draft</span>
+</button>
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary-container font-headline-sm text-headline-sm transition-all shadow-md flex items-center justify-center gap-2" id="create-task-submit" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Create Task</span>
+</button>
+</div>
+</div>
+</form>
+<!-- Supportive Productivity Tips Strip -->
+<div class="p-space-lg rounded-xl bg-surface-card shadow-sm flex items-start gap-space-md">
+<div class="h-10 w-10 shrink-0 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">tips_and_updates</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary">Pro Tip for Engineering Leads</span>
+<p class="font-body-sm text-body-sm text-text-secondary mt-0.5">
+            Tasks flagged with <strong>High Priority</strong> automatically notify connected workspace peers in real-time. Link sprint targets directly to academic and engineering roadmaps.
+          </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Live Interactive Card Preview (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-24">
+<!-- Visual Banner / Header with Photo Anchor -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Live Kanban Preview</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2 py-0.5 rounded-full font-bold">Interactive</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+          Real-time visualization of how this card surfaces on team sprint boards and operational streams.
+        </p>
+</div>
+<!-- Simulated Board View Container -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-status-raised-text" id="preview-col-dot"></span>
+<span class="font-headline-sm text-headline-sm text-text-primary" id="preview-col-name">In Review</span>
+<span class="font-label-sm text-label-sm text-text-muted px-1.5 py-0.2 rounded bg-surface-container">1</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted">more_horiz</span>
+</div>
+<!-- The Live Card itself -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-md hover:shadow-xl transition-all flex flex-col gap-3" id="live-card-container">
+<!-- Top Row: Title + Priority Tag -->
+<div class="flex items-start justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm text-text-primary leading-tight line-clamp-2" id="preview-card-title">
+              Final Thesis Submission &amp; Defense
+            </h4>
+<span class="shrink-0 font-label-sm text-label-sm bg-priority-high-bg text-priority-high-text px-2 py-0.5 rounded-full font-bold flex items-center gap-1" id="preview-priority-badge">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>High</span>
+</span>
+</div>
+<!-- Description Preview -->
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2" id="preview-card-desc">
+            Complete the final peer-reviewed manuscript, verify citations against ACM standards, and rehearse defense slides with committee.
+          </p>
+<!-- Category Chip + System Timestamp Pill -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-2 py-0.5 rounded flex items-center gap-1" id="preview-category-badge">
+<span class="material-symbols-outlined text-[12px]">school</span>
+<span>Academic</span>
+</span>
+<span class="font-label-sm text-label-sm bg-status-raised-bg text-status-raised-text px-2 py-0.5 rounded-full font-bold" id="preview-status-badge">
+              Raised
+            </span>
+</div>
+<!-- Due Date & Progress Bar -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between text-text-muted font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+<span class="font-medium text-text-secondary" id="preview-due-date">28 Aug 2026</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">25% Done</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-1/4"></div>
+</div>
+</div>
+<!-- Assignee Stack and Action Track -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center -space-x-2">
+<img class="w-7 h-7 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Close up professional portrait of Jacob Jones in modern minimal workspace, crisp clean studio lighting, high resolution office context" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWa-rHC2auCBDzUsfRPwuoViwx-z7SNM1DjP2cUQmU6t2q2atwl5vs-SwNlHuyVrcBPsdh_fKfwmFdg2R-90IYqnbq85WCR_5j3N6OInqq7phdxZn3NioC92TdeNzXtI2qRcF1L4JSRr19Z0PG9thiNp9Y53XWJimFO_MPQRakS1MXgJUAAFl8AGcxhgpfp3PfrzP9rvnUekGQHf_6xa2kIYLENqJiQgCf20HBbe76cJF77TjgemHm7w"/>
+<img class="w-7 h-7 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Portrait of an engineering teammate with glasses smiling in a modern bright research lab, soft daylight, professional enterprise attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwXZIyrwH7YPBckyfCUbBkVo4cxl5u41yBpz_XI2LPzKTdV70W6xYe9P_a_-NG56wgd46mc3CiQb0hXSy0vBh0ZMN_gUm-MgCSUeK-rGsr-LjzIKGRM0OdvmGjZFvYEFz3HV6u4wQqy2VxHGh2XlKjxmTwF_INeVsqIpCAktXiw6IukZKSljBg05ClHRaZGk0CpNw8ZNZxjv4TcVF1oR7jLplxqCh7cZPKzQnX0RBrO0lyUdJJRZ7QlA"/>
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">
+                +2
+              </div>
+</div>
+<button class="h-6 w-6 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+<!-- Task Velocity Metric Visualization -->
+<div class="p-3 bg-surface-card rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">bolt</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Est. Sprint Velocity</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-text-primary">8 Story Points</span>
+</div>
+</div>
+<!-- Quick Action Toast / Notification feedback element -->
+<div class="hidden p-3 rounded-lg bg-status-closed-bg text-status-closed-text font-body-sm text-body-sm shadow-md flex items-center gap-2" id="form-feedback-toast">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span id="toast-message">Task created successfully and synced to live sprint!</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic Realtime Synchronization & Client-Side Micro-Interactions
+  (function initAddTaskForm() {
+    const titleInput = document.getElementById('task-title-input');
+    const descInput = document.getElementById('task-desc-input');
+    const dueDateInput = document.getElementById('task-due-date');
+    const charCount = document.getElementById('title-char-count');
+    
+    // Live Preview Targets
+    const previewTitle = document.getElementById('preview-card-title');
+    const previewDesc = document.getElementById('preview-card-desc');
+    const previewDueDate = document.getElementById('preview-due-date');
+    const previewPriority = document.getElementById('preview-priority-badge');
+    const previewCategory = document.getElementById('preview-category-badge');
+    const previewStatus = document.getElementById('preview-status-badge');
+    const previewColName = document.getElementById('preview-col-name');
+    const previewColDot = document.getElementById('preview-col-dot');
+    const timestampDisplay = document.getElementById('raised-timestamp-val');
+    const toast = document.getElementById('form-feedback-toast');
+    const toastMsg = document.getElementById('toast-message');
+
+    // Update Timestamp dynamically on load
+    function refreshTimestamp() {
+      const now = new Date();
+      const options = { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+      if (timestampDisplay) {
+        timestampDisplay.textContent = now.toLocaleDateString('en-GB', options) + ' EST';
+      }
+    }
+    refreshTimestamp();
+
+    // 1. Task Title Live Sync
+    if (titleInput && previewTitle && charCount) {
+      titleInput.addEventListener('input', (e) => {
+        const val = e.target.value;
+        charCount.textContent = `${val.length} / 96 chars`;
+        previewTitle.textContent = val.trim() ? val : 'Final Thesis Submission & Defense';
+      });
+    }
+
+    // 2. Task Description Live Sync
+    if (descInput && previewDesc) {
+      descInput.addEventListener('input', (e) => {
+        const val = e.target.value;
+        previewDesc.textContent = val.trim() 
+          ? val 
+          : 'Complete the final peer-reviewed manuscript, verify citations against ACM standards, and rehearse defense slides with committee.';
+      });
+    }
+
+    // 3. Priority Selection Handling
+    const priorityCards = document.querySelectorAll('.priority-card');
+    priorityCards.forEach(card => {
+      card.addEventListener('click', () => {
+        priorityCards.forEach(c => {
+          c.classList.remove('bg-priority-high-bg', 'text-priority-high-text', 'bg-priority-med-bg', 'text-priority-med-text', 'bg-priority-low-bg', 'text-priority-low-text');
+          c.classList.add('bg-surface-container', 'text-text-secondary');
+          const check = c.querySelector('.priority-radio-check');
+          if (check) {
+            check.className = 'priority-radio-check h-4 w-4 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center text-[10px]';
+          }
+        });
+
+        const pType = card.getAttribute('data-priority');
+        const check = card.querySelector('.priority-radio-check');
+
+        if (pType === 'High') {
+          card.classList.remove('bg-surface-container', 'text-text-secondary');
+          card.classList.add('bg-priority-high-bg', 'text-priority-high-text');
+          if (check) check.className = 'priority-radio-check h-4 w-4 rounded-full bg-priority-high-text text-on-primary flex items-center justify-center text-[10px]';
+          previewPriority.className = 'shrink-0 font-label-sm text-label-sm bg-priority-high-bg text-priority-high-text px-2 py-0.5 rounded-full font-bold flex items-center gap-1';
+          previewPriority.innerHTML = `<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span><span>High</span>`;
+        } else if (pType === 'Medium') {
+          card.classList.remove('bg-surface-container', 'text-text-secondary');
+          card.classList.add('bg-priority-med-bg', 'text-priority-med-text');
+          if (check) check.className = 'priority-radio-check h-4 w-4 rounded-full bg-priority-med-text text-on-primary flex items-center justify-center text-[10px]';
+          previewPriority.className = 'shrink-0 font-label-sm text-label-sm bg-priority-med-bg text-priority-med-text px-2 py-0.5 rounded-full font-bold flex items-center gap-1';
+          previewPriority.innerHTML = `<span class="material-symbols-outlined text-[13px]">warning</span><span>Medium</span>`;
+        } else {
+          card.classList.remove('bg-surface-container', 'text-text-secondary');
+          card.classList.add('bg-priority-low-bg', 'text-priority-low-text');
+          if (check) check.className = 'priority-radio-check h-4 w-4 rounded-full bg-priority-low-text text-on-primary flex items-center justify-center text-[10px]';
+          previewPriority.className = 'shrink-0 font-label-sm text-label-sm bg-priority-low-bg text-priority-low-text px-2 py-0.5 rounded-full font-bold flex items-center gap-1';
+          previewPriority.innerHTML = `<span class="material-symbols-outlined text-[13px]">check_circle</span><span>Low</span>`;
+        }
+      });
+    });
+
+    // 4. Category Selector Handling
+    const categoryInputs = document.querySelectorAll('input[name="task-category"]');
+    categoryInputs.forEach(input => {
+      input.addEventListener('change', (e) => {
+        const val = e.target.value;
+        const labels = document.querySelectorAll('.category-chip');
+        labels.forEach(l => {
+          l.classList.remove('bg-surface-container-high', 'text-primary');
+          l.classList.add('bg-canvas-bg', 'text-text-secondary');
+          const iconBox = l.querySelector('div:first-of-type');
+          if (iconBox) {
+            iconBox.className = 'h-8 w-8 rounded-lg bg-surface-container text-text-secondary flex items-center justify-center';
+          }
+        });
+
+        const activeLabel = input.closest('.category-chip');
+        activeLabel.classList.remove('bg-canvas-bg', 'text-text-secondary');
+        activeLabel.classList.add('bg-surface-container-high', 'text-primary');
+        const activeIcon = activeLabel.querySelector('div:first-of-type');
+        if (activeIcon) {
+          activeIcon.className = 'h-8 w-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center';
+        }
+
+        if (val === 'Academic') {
+          previewCategory.className = 'font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-2 py-0.5 rounded flex items-center gap-1';
+          previewCategory.innerHTML = `<span class="material-symbols-outlined text-[12px]">school</span><span>Academic</span>`;
+        } else {
+          previewCategory.className = 'font-label-sm text-label-sm bg-surface-container text-text-secondary px-2 py-0.5 rounded flex items-center gap-1';
+          previewCategory.innerHTML = `<span class="material-symbols-outlined text-[12px]">person_celebrate</span><span>Personal</span>`;
+        }
+      });
+    });
+
+    // 5. Due Date Sync
+    if (dueDateInput && previewDueDate) {
+      dueDateInput.addEventListener('input', (e) => {
+        previewDueDate.textContent = e.target.value || '28 Aug 2026';
+      });
+    }
+
+    window.setDueDatePreset = function(presetValue) {
+      if (dueDateInput) {
+        dueDateInput.value = presetValue;
+        if (previewDueDate) previewDueDate.textContent = presetValue;
+      }
+    };
+
+    // 6. Status Buttons Handling
+    const statusBtns = document.querySelectorAll('.status-btn');
+    statusBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        statusBtns.forEach(b => {
+          b.className = 'status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm text-text-secondary hover:text-on-surface transition-all';
+          const dot = b.querySelector('span:first-child');
+          if (dot) dot.classList.add('opacity-50');
+        });
+
+        const st = btn.getAttribute('data-status');
+        const dot = btn.querySelector('span:first-child');
+        if (dot) dot.classList.remove('opacity-50');
+
+        if (st === 'Raised') {
+          btn.className = 'status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm bg-status-raised-bg text-status-raised-text shadow-sm transition-all';
+          previewStatus.className = 'font-label-sm text-label-sm bg-status-raised-bg text-status-raised-text px-2 py-0.5 rounded-full font-bold';
+          previewStatus.textContent = 'Raised';
+          previewColName.textContent = 'Raised / Backlog';
+          previewColDot.className = 'h-2.5 w-2.5 rounded-full bg-status-raised-text';
+        } else if (st === 'Pending') {
+          btn.className = 'status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm bg-status-pending-bg text-status-pending-text shadow-sm transition-all';
+          previewStatus.className = 'font-label-sm text-label-sm bg-status-pending-bg text-status-pending-text px-2 py-0.5 rounded-full font-bold';
+          previewStatus.textContent = 'Pending';
+          previewColName.textContent = 'In Review';
+          previewColDot.className = 'h-2.5 w-2.5 rounded-full bg-status-pending-text';
+        } else if (st === 'Closed') {
+          btn.className = 'status-btn flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg font-headline-sm text-headline-sm bg-status-closed-bg text-status-closed-text shadow-sm transition-all';
+          previewStatus.className = 'font-label-sm text-label-sm bg-status-closed-bg text-status-closed-text px-2 py-0.5 rounded-full font-bold';
+          previewStatus.textContent = 'Closed';
+          previewColName.textContent = 'Completed';
+          previewColDot.className = 'h-2.5 w-2.5 rounded-full bg-status-closed-text';
+        }
+      });
+    });
+
+    // 7. Form Submission Trigger
+    const submitBtn = document.getElementById('create-task-submit');
+    const draftBtn = document.getElementById('save-draft-btn');
+
+    function showToast(message) {
+      if (toast && toastMsg) {
+        toastMsg.textContent = message;
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 4000);
+      }
+    }
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        const titleVal = titleInput ? titleInput.value.trim() : '';
+        if (!titleVal) {
+          if (titleInput) {
+            titleInput.focus();
+            titleInput.classList.add('bg-priority-high-bg');
+            setTimeout(() => titleInput.classList.remove('bg-priority-high-bg'), 1500);
+          }
+          return;
+        }
+        refreshTimestamp();
+        showToast('✓ Task created successfully! Live Kanban sync updated.');
+      });
+    }
+
+    if (draftBtn) {
+      draftBtn.addEventListener('click', () => {
+        showToast('Task draft securely saved to browser cache.');
+      });
+    }
+
+  })();
+</script></main></div></body></html>
